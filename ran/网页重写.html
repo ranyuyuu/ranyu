@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="a.css" />
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div id="cl">
+				<div class="k"></div>
+				<div class=""></div>
+				<div class=""></div>
+				<div class=""></div>
+			</div>
+			
+			<!--按钮-->
+			<span id="s"><</span>
+			<span id="s2">></span>
+			
+			<!--头部-->
+			<div class="head">
+				<div class="div_1">
+				     <div class="dv" id="me">HOME</div>
+				     <div class="dv" id="so">PRODCTS
+				     	<ul id="z">
+				     		<li class="j">1</li>
+				     		<li class="j">2</li>
+				     		<li class="j">3</li>
+				     		<li class="j">4</li>
+				     		<li class="j">5</li>
+				     	</ul>
+				     </div>
+				     <div class="dv">CORPORATE</div>
+				     <div class="dv">SUPPORT</div>
+				     <div class="dv">CONTACT US</div>
+				</div>
+				<img src="2.png" alt="" class="im1" />
+			</div>
+			
+			<!--内容部分-->
+			<div class="content">
+				
+				<!--图片中间部分-->
+				<div class="cot">
+				<div class="cet">
+					<div id="con_1" class="con">
+						<div id="d">SUV</div>
+						<div id="d1">HD120</div>
+						<div id="d2">
+							Simple Ubiquitous Video Transmitter & Receiver Whether it's a live broadcast seen by millions of people around the world, a Fortune 500 corporate meeting, an urgent channel add-on, a laptop projection, a gaming event, or a dream wedding, Shining Technology's new SUV HD120 answers the call.
+						</div>
+					</div>
+
+					<div class="con_2">
+						<img src="a.png" />
+					</div>
+				</div>
+
+
+				<div class="cet">
+					<!--内容部分-->
+					<div id="con_1" class="con">
+						<div id="d">SUV</div>
+						<div id="d1">HD8K2</div>
+						<div id="d2">
+							Simple Ubiquitous Video Transmitter & Receiver Whether it's a live broadcast seen by millions of people around the world, a trek up the Himalayas, a motor racing shoot, airborne news coverage, an urgent channel add-on, a laptop projection, or a dream wedding, Shining Technology's new SUV HD8K2 answers the call.
+						</div>
+					</div>
+
+					<div class="con_2">
+						<img src="d.png" />
+					</div>
+				</div>
+
+				<div class="cet">
+					<!--内容部分-->
+					<div id="con_1" class="con">
+						<div id="d">SCOTT</div>
+						<div id="d1">CA1800/BU1801</div>
+						<div id="d2">
+							Single Core Triaxial Transceiver Base Unit BU1801 - Power and Control ENG Cameras Remotely! Camera Adapter CA1800 - Studio Camera Capability At a Fraction of the Cost
+						</div>
+					</div>
+	
+					<div class="con_2">
+						<img src="w.png" />
+					</div>
+				</div>
+
+				<div class="cet">
+					<!--内容部分-->
+					<div id="con_1" class="con">
+						<div id="d">MCOTT</div>
+						<div id="d1">CA1600/BU1604</div>
+						<div id="d2">
+							Multi-Core Optical Triaxial Transceiver Saves Studios/Broadcasters tens of thousands of dollars. Provides studio camera capability at a fraction of the cost. Preserves & extends life of existing ENG/shoulder-mount/handheld cameras. Managers power, AV signals, intercom audio and control efficiently and effortlessly with a Multi-Core cable.
+						</div>
+					</div>
+
+					<div class="con_2">
+						<img src="z.png" class="divs" />
+					</div>
+				</div>
+			</div>
+
+
+				<div id="is">
+					<div class="eve">EVENTS</div>
+					<div class="fud">No Calendar Events Found or Calendar not set to Public.</div>
+				</div>
+
+				
+				<div class="lef">
+					<div class="sh">SUV HD120</div>
+					<img src="4.png" alt="" />
+				</div>
+				<div class="lef">
+					<img src="6.png" alt="" />
+				</div>
+				<div class="lef">
+					<img src="9.png" alt="" />
+				</div>
+				<div class="lef">
+					<img src="16.png" alt="" />
+				</div>
+				
+			</div>
+				
+				<!--第二个页面-->
+					<img src="16.png" alt="" class="ig"/>	
+				
+			</div>
+		
+				<div class="foote">
+					<span id="p"></span>
+				</div>
+		
+	</body>
+	<script src="jquery-1.11.0.js"></script>
+	<script type="text/javascript">
+		// 获取元素
+		var div = document.getElementsByClassName("div");
+		var imgs = document.getElementsByClassName('dv');
+		var lis = document.getElementsByClassName("j");
+		var ls = document.getElementsByClassName("ig");
+		var imge = document.getElementsByClassName('cet');
+		var left = $('#s');
+		var right = $('#s2');
+		var divs = $('#cl div');
+		var cai = $("#z");
+		var cai2 = $("#so");
+		
+		
+		// 	头部添加样式
+		
+		$("#so").mouseover(function(){
+			$("#z").stop().slideDown();
+		})
+
+		$("#so").mouseout(function(){
+			$("#z").stop().slideUp();
+			
+		})
+		
+		$(".j").hover(function(){
+			for (var i =0;i<lis.length;i++) {
+				lis[i].style.background = "";
+				console.log(i);
+			}
+			
+				this.style.background = "red";
+				this.style.opacity = "0.7";
+				console.log(i);
+				// i=5
+		})
+	
+			$('#me').click(function(){
+			ls[0].style.display="none";
+			for (var b = 0; b<imge.length;b++) {
+				      imge[b].style.display = "block";
+				      
+				}
+				
+		})
+		// 跳转到第二个页面
+		$("#so").click(function(){
+			for (var a = 0; a<imge.length;a++) {
+				      imge[a].style.display = "none";
+				      
+				}
+				ls[0].style.display="block";
+				
+		})
+	
+		
+	
+	
+	
+ 		// 原点切换
+   		for(var i = 0;i<imge.length;i++){
+   			if(i==0){
+   				divs[i].style.background = 'greenyellow';
+   			}
+   			divs[i].index = i;
+   			divs[i].onclick = function(){
+   				for (var j = 0; j <imge.length; j++) {
+				      imge[j].style.display = "none";
+				      divs[j].style.background="orchid";
+				}
+   				imge[this.index].style.display = 'block';
+   				this.style.background= 'greenyellow';
+				this.style.transaction = '2s';
+				index=this.index;
+   			}
+   		}
+	
+	
+	
+		// 图片切换
+		var index = 0;
+		right.on('click',function(){
+			index++;
+			if(index>3){
+				index=0;
+			}
+		for (var i =0;i<imge.length;i++) {
+			imge[i].style.display = 'none';
+			divs[i].style.background = "orchid";
+		}
+		
+		imge[index].style.display = 'block';
+		divs[index].style.background = "greenyellow";
+		})
+
+			
+		var index = 3;
+		left.on('click',function(){
+			index--;
+			if(index<0){
+				index=3;
+			}
+		for (var i =0;i<imge.length;i++) {
+			imge[i].style.display = 'none';
+			divs[i].style.background = "orchid";
+		}
+		
+		imge[index].style.display = 'block';
+		divs[index].style.background = "greenyellow";
+		})
+
+
+		// 跳转顶部
+		//获取标签
+		//		var a = document.getElementById('p');
+		//		console.log(a);
+		//		//2 js实现跳转
+		//		a.onclick = function(){
+		//			document.body.scrollTop = 0;
+		//		}
+
+		// jq写法  跳转顶部
+		$('#p').click(function() {
+			document.body.scrollTop = 0;
+		})
+	</script>
+
+</html>
